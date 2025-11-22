@@ -11,7 +11,6 @@ import PokemonStatic1 from "./PokedexUi/PokemonStatic1";
 
 const PokeDex = () => {
   const [pokeInfo, setPokeInfo] = useState(pokemonObject);
-
   const [randomId, setRandomId] = useState(1);
 
   const API = `https://pokeapi.co/api/v2/pokemon/${randomId}/`;
@@ -35,7 +34,7 @@ const PokeDex = () => {
         },
       });
     } catch (error) {
-      console.log("Error :", error);
+      return error;
     }
   };
 
@@ -46,15 +45,15 @@ const PokeDex = () => {
   }, [randomId]);
 
   const genRandomId = () => {
-    let radomNumber = Math.floor(Math.random() * 151) + 1;
+    let radomNumber = Math.floor(Math.random() * 513) + 1;
     setRandomId(radomNumber);
   };
 
   return (
-    <div className="w-full max-h-screen flex justify-center items-center mt-20 text-white">
+    <div className="flex justify-center items-center text-white">
       {/* pokedex border start here */}
 
-      <div className="w-90 h-auto border-4 border-black bg-red-800 p-2 rounded-2xl shadow-lg shadow-sky-300">
+      <div className="w-90 h-auto border-4 border-black bg-red-800 p-2 rounded-2xl shadow-lg shadow-zinc-800">
         <PokedexColor />
         <div className="border-b my-3.5 border-2 border-black w-full"></div>
 
