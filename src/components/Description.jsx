@@ -13,11 +13,12 @@ const Description = () => {
       <div className="h-px bg-slate-400 my-5"></div>
       <div>
         <p className="text-[20px] text-zinc-600">
-          An <b>electronic encyclopedia</b> gifted to select Trainers. Its
-          function is to automatically record the facts, data, and a short
-          descriptive entry for every Pokémon species a Trainer sees or captures
-          during their journey. The ultimate goal for any Trainer is to
-          successfully complete this powerful high-tech database.
+          This application displays detailed information about Pokémon using the
+          official Pokémon API. Each entry includes the Pokémon’s image, name,
+          type, stats, height, and weight. The interface is built with React for
+          component-based structure and Tailwind CSS for responsive styling.
+          JavaScript handles data fetching and state management, ensuring smooth
+          interaction and accurate data retriev.
         </p>
         <div className="h-px bg-slate-400 my-5"></div>
         <div>
