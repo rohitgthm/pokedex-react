@@ -16,7 +16,7 @@ const PokemonDemographicData = ({ pokeInfo }) => {
         Height : {pokeInfo.height * 10}cm{" "}
       </span>
       <span className="text-gray-300 text-sm font-medium my-0.5">
-        Weight : {pokeInfo.weight * 0.1}kg
+        Weight : {(pokeInfo.weight * 0.1).toFixed(2)}kg
       </span>
     </div>
   );

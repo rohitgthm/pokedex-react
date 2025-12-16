@@ -47,6 +47,7 @@ const Description = () => {
             href="https://github.com/rohitgthm/pokedex-react"
             className="hover:text-blue-800/50 transition-all"
             target="_blank"
+            aria-label="github repo for this project"
           >
             <Github />
           </a>
@@ -54,6 +55,7 @@ const Description = () => {
             href="https://www.linkedin.com/in/rohit-kumar-413a67357/"
             target="_blank"
             className="hover:text-blue-500 transition-all"
+            aria-label="linkedin post for this project"
           >
             <Linkedin />
           </a>
